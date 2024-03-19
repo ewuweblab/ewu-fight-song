@@ -1,29 +1,35 @@
-body {
-    background: gray;
-}
+/* Load Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Cutive&display=swap');
 
 /* CSS Variables */
 :root {
+    /* Color Palette */
+    --color-1 : #2C0C11;
+    --color-2 : #BB1215;
+    --color-3 : #505050;
+
     /* main UI color */
-    --plyr-color-main: darkgray;
+    --plyr-color-main: var(--color-1);
     /* audio controls background */
-    --plyr-audio-controls-background: black;
+    --plyr-audio-controls-background: var(--color-2);
     /* audio controls color */
-    --plyr-audio-control-color: white;
+    --plyr-audio-control-color: var(--color-3);
+    /* Font Size */
+    --plyr-font-size-time: 1.25rem;
+}
 
-    --plyr-audio-control-color-hover:  black;
+body {
+    background: url(./assets/wallpaper.jpg) repeat;
+    font-family: "Aleo", serif;
+}
 
-    --plyr-audio-progress-buffered-background:  black;
+h1, h2 {
+    text-align: center;
+}
 
-    --plyr-audio-range-track-background: white;
-    
-    --plyr-font-family: sans-serif;
-    --plyr-font-size-time: 16px;
-
-    --plyr-tooltip-background: white;
-    --plyr-tooltip-color: black; 
-
-    --plyr-control-icon-size: 16px;
+h1 {
+    color: #BB1215;
+    font-size: 3rem;
 }
 
 /* Layout */
@@ -32,7 +38,8 @@ main {
     max-width: 60em;
     margin-inline: auto;
 
-    background: lightgray;
+    background: rgba(255, 255, 255, .85);
+    padding: 1em;
 }
 
 main img {
@@ -41,21 +48,51 @@ main img {
     display: block;
 }
 
+/* Song Lyrics */
 article {
     /* flow content horizontally */
     display: flex;
     gap: 1em;
     justify-content: center;
+
+
 }
 
+article section {
+    /* equal width flex'd children */
+    flex: 1;
+}
+
+article p {
+    font-size: 1.5rem;
+}
+
+.callout {
+    color: var(--color-2);
+    font-size: 3em;
+}
+
+/* Footer */
 footer {
     text-align: center;
 }
+
+footer a:link, footer a:visited {
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+footer a:hover, 
+footer a:active {
+    color: var(--color-2);
+}
+
+
 
 /* Media Queries */
 @media (max-width: 600px) {
     main article {
         flex-direction: column;
-        align-items: center;
     }
 }

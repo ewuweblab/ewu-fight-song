@@ -13,6 +13,7 @@
 * What's old is new agai. This is the [modern mixtape](https://en.wikipedia.org/wiki/Mixtape) or a compilation of curated songs. 
 
 ## Citations
+* [George William Lotzenhiser](https://www.ewu.edu/magazine/stories/remembering-george-william-lotzenhiser/)
 * [EWU Fight Song Lyrics](https://www.fightsonglyrics.com/ncaa/eastern-washington-eagles)
 * [EWU Fight Song](https://www.youtube.com/watch?v=UOxLQ7g-iL8)
 * [EWU Wallpaper](https://www.ewu.edu/wp-content/uploads/2020/05/EWU-Black_ZoomBckgrnd.jpg)
